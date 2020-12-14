@@ -94,29 +94,7 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
-        echo "CONFIG_FIRMWARE_ENABLE_USB=y"
-        echo "CONFIG_FIRMWARE_ENABLE_UFSD=y"
-        echo "CONFIG_FIRMWARE_ENABLE_FAT=y"
-        echo "CONFIG_FIRMWARE_ENABLE_EXFAT=y"
-        echo "CONFIG_FIRMWARE_ENABLE_EXT2=y"
-        echo "CONFIG_FIRMWARE_ENABLE_EXT3=y"
-        echo "CONFIG_FIRMWARE_ENABLE_EXT4=y"
-        echo "CONFIG_FIRMWARE_ENABLE_FUSE=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_SERIAL=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_QOS=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_IPSET=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_NFSD=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_NFSC=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_CIFS=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_LANG_CN=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_LPRD=n"
-        echo "CONFIG_FIRMWARE_INCLUDE_U2EC=n"
-        echo "CONFIG_FIRMWARE_INCLUDE_SMBD=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_FTPD=y"
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n"
-        echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n"
-        echo "CONFIG_FIRMWARE_INCLUDE_TTYD=y"
+        
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
